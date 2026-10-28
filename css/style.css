@@ -292,6 +292,111 @@ h2 {
 
 .caso__link { display: inline-block; margin-top: 1rem; font-family: var(--f-display); font-weight: 600; }
 
+/* Prévia da página do cliente (recorte do topo) */
+
+.caso__previa {
+  display: block;
+  width: 100%;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+button.caso__previa { cursor: zoom-in; }
+button.caso__previa:hover { border-color: var(--line-strong); }
+
+.caso__barra {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--soft);
+  font-family: var(--f-display);
+  font-size: 0.82rem;
+}
+
+.caso__barra i {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+
+.caso__barra span { margin-left: 0.5rem; }
+
+.caso__previa img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.caso__dica {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  border-top: 1px solid var(--line);
+  color: var(--primary);
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* Janela com a página inteira, rolável */
+
+.visualizador {
+  width: min(100% - 2rem, 62rem);
+  max-height: 90vh;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.visualizador::backdrop { background: rgba(8, 20, 32, 0.7); }
+
+.visualizador__topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.visualizador__titulo { margin: 0; font-family: var(--f-display); font-weight: 600; }
+
+.visualizador__corpo { overflow: auto; max-height: calc(90vh - 3.6rem); }
+.visualizador__corpo img { display: block; width: 100%; height: auto; }
+
+.botao--pequeno { padding: 0.4rem 0.95rem; border-width: 1.5px; font-size: 0.92rem; cursor: pointer; background: transparent; }
+
+body:has(dialog[open]) { overflow: hidden; }
+
+/* Fotos ao lado do título da seção */
+
+.lateral {
+  display: block;
+  width: 100%;
+  max-width: 17rem;
+  margin-top: 1.6rem;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+}
+
+.lateral--quadrada { aspect-ratio: 1; }
+
 /* ---------- Sobre ---------- */
 
 .retrato {

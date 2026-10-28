@@ -19,6 +19,7 @@ portfolio-daniel/
 ├── css/style.css     estilos (cores e fontes no topo do arquivo)
 ├── js/cases.js       dados dos estudos de caso (edite aqui)
 ├── js/main.js        mostra os casos publicados
+├── ferramentas/      script que captura os sites dos casos
 └── assets/
     └── foto-perfil.jpg
 ```
@@ -30,6 +31,18 @@ portfolio-daniel/
 - **Foto:** troque `assets/foto-perfil.jpg` mantendo o mesmo nome.
 - **Estudos de caso:** os casos da Viagem Plus e da PicSells já estão em `js/cases.js`. Para acrescentar outro, copie o modelo do fim do arquivo, preencha com um projeto real e troque `rascunho: true` por `rascunho: false`. Quando tiver números reais (visitas, cotações, vendas), acrescente ao campo `resultado`.
 - **Telefone:** se não quiser deixar o WhatsApp público, apague os dois links `wa.me` e a linha de WhatsApp na seção de contato.
+
+## Capturas de tela dos estudos de caso
+
+As imagens dos casos (recorte do topo e página completa) são geradas automaticamente:
+
+```bash
+py -3.11 -m pip install playwright pillow
+py -3.11 -m playwright install chromium
+py -3.11 ferramentas/capturar_sites.py
+```
+
+Elas ficam em `assets/casos/`. Para atualizar uma só, use `--so viagemplus`. Se uma imagem não existir, o recorte simplesmente não aparece.
 
 ## Testar no computador
 

@@ -128,20 +128,13 @@
       <div class="miolo secao__grade">
         <div class="secao__rotulo">
           <h2>O que eu faço</h2>
-          <p>Serviços para pequenos negócios e profissionais que querem aparecer e trabalhar com menos retrabalho.</p>
+          <p>Três frentes para pequenos negócios e profissionais que querem aparecer e trabalhar com menos retrabalho.</p>
+          <img class="lateral" src="assets/lateral-servicos.jpg" width="724" height="905" loading="lazy" alt="Daniel Fernandes lendo ao microfone durante um evento ao ar livre">
         </div>
         <dl class="linhas">
           <div class="linha">
             <dt>Web design</dt>
-            <dd>Sites e páginas em WordPress e Elementor, adaptados ao celular e fáceis de atualizar.</dd>
-          </div>
-          <div class="linha">
-            <dt>SEO</dt>
-            <dd>Estrutura, títulos, velocidade e conteúdo para o site ser encontrado no Google.</dd>
-          </div>
-          <div class="linha">
-            <dt>Tráfego pago</dt>
-            <dd>Anúncios que levam visitantes ao site, com acompanhamento do que gera contato.</dd>
+            <dd>Sites e páginas em WordPress e Elementor, adaptados ao celular e fáceis de atualizar. Todo site já sai com SEO padrão: títulos, estrutura e velocidade pensados para ser encontrado no Google.</dd>
           </div>
           <div class="linha">
             <dt>Automação e IA</dt>
@@ -150,10 +143,6 @@
           <div class="linha">
             <dt>Vídeo e design</dt>
             <dd>Edição de vídeos e peças para redes sociais, com identidade visual consistente.</dd>
-          </div>
-          <div class="linha">
-            <dt>Copywriting e assistência virtual</dt>
-            <dd>Textos para site e anúncios, e apoio remoto na organização de tarefas e no atendimento.</dd>
           </div>
         </dl>
       </div>
@@ -196,13 +185,13 @@
       <div class="miolo secao__grade">
         <div class="secao__rotulo">
           <h2>Sobre mim</h2>
-          <img class="retrato" src="assets/foto-perfil.jpg" width="800" height="800" loading="lazy" alt="Retrato de Daniel Fernandes">
+          <img class="retrato" src="assets/foto-perfil.jpg" width="800" height="800" loading="lazy" alt="Retrato de Daniel Fernandes, de paletó azul e camisa branca">
         </div>
         <div class="texto">
           <p>Trabalho há 25 anos na Polícia Militar do Ceará, onde aprendi a organizar processos, decidir sob pressão e cumprir prazos. Desde 2026 levo essa disciplina para projetos digitais como freelancer.</p>
           <p>Curso Engenharia de Software na UNIGRANDE e estudo Python, APIs e automação com IA para que cada site e cada fluxo que eu entrego seja simples de usar e fácil de manter.</p>
           <p>Estou aberto a projetos remotos, no Brasil e no exterior.</p>
-          <p class="texto__ferramentas"><strong>Ferramentas:</strong> WordPress, Elementor, HTML, CSS, Python, n8n, Git, GitHub e Docker.</p>
+          <p class="texto__ferramentas"><strong>Ferramentas:</strong> WordPress, Elementor, HTML, CSS, JavaScript, React.js, Python, n8n, Git, GitHub e Docker, além de noções de SQL.</p>
         </div>
       </div>
     </section>
@@ -212,6 +201,7 @@
         <div class="secao__rotulo">
           <h2>Vamos conversar</h2>
           <p>Conte o que você precisa. Respondo por WhatsApp ou e-mail.</p>
+          <img class="lateral lateral--quadrada" src="assets/lateral-contato.jpg" width="521" height="521" loading="lazy" alt="Daniel Fernandes falando ao microfone, de pé atrás de um púlpito de acrílico">
         </div>
         <ul class="contatos">
           <li><a href="https://wa.me/5585998057097?text=Ol%C3%A1%2C%20Daniel!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." rel="noopener"><span class="contato__rotulo">WhatsApp</span><span class="contato__valor">+55 (85) 99805-7097</span></a></li>
@@ -229,6 +219,16 @@
       <p>© 2026 Daniel Fernandes. Fortaleza, Ceará, Brasil.</p>
     </div>
   </footer>
+
+  <dialog class="visualizador" id="visualizador" aria-labelledby="visualizador-titulo">
+    <div class="visualizador__topo">
+      <p class="visualizador__titulo" id="visualizador-titulo">Página completa</p>
+      <button class="botao botao--vazado botao--pequeno" type="button" id="visualizador-fechar">Fechar</button>
+    </div>
+    <div class="visualizador__corpo">
+      <img id="visualizador-imagem" alt="">
+    </div>
+  </dialog>
 
   <script src="js/cases.js"></script>
   <script src="js/main.js"></script>
