@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Fernandes | Web design, automação e edição de vídeo</title>
+  <meta name="description" content="Daniel Fernandes, de Fortaleza: sites em WordPress, automação de processos com n8n e IA, e edição de vídeos. Veja serviços, projetos e como entrar em contato.">
+  <meta name="theme-color" content="#EEF3F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A1822" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Fernandes | Web design, automação e edição de vídeo">
+  <meta property="og:description" content="Sites em WordPress, automação com n8n e IA, e edição de vídeos.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://daniel-nfernandes.github.io/">
+  <meta property="og:image" content="https://daniel-nfernandes.github.io/assets/foto-perfil.jpg">
+  <link rel="canonical" href="https://daniel-nfernandes.github.io/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Fernandes",
+    "jobTitle": "Webdesigner e especialista em automação de processos",
+    "url": "https://daniel-nfernandes.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Fortaleza", "addressRegion": "CE", "addressCountry": "BR" },
+    "sameAs": [
+      "https://www.linkedin.com/in/daniel-nfernandes",
+      "https://github.com/Daniel-NFernandes"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <div class="miolo topo__linha">
+      <a class="marca" href="#inicio">Daniel Fernandes</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#casos" id="menu-casos" hidden>Estudos de caso</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="heroi" id="inicio">
+      <div class="miolo heroi__grade">
+        <div class="heroi__texto">
+          <h1>Sites que atraem clientes e rotinas que se resolvem sozinhas.</h1>
+          <p class="heroi__apoio">
+            Sou Daniel Fernandes, de Fortaleza. Crio sites em WordPress, automatizo processos com n8n e edito vídeos.
+            Também sou policial militar há 25 anos e curso Engenharia de Software.
+          </p>
+          <p class="heroi__acoes">
+            <a class="botao botao--cheio" href="#projetos">Ver projetos</a>
+            <a class="botao botao--vazado" href="https://wa.me/5585998057097?text=Ol%C3%A1%2C%20Daniel!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." rel="noopener">Chamar no WhatsApp</a>
+          </p>
+        </div>
+
+        <figure class="quadro">
+          <svg viewBox="0 0 560 340" role="img" aria-labelledby="fluxo-t fluxo-d">
+            <title id="fluxo-t">Exemplo de automação</title>
+            <desc id="fluxo-d">Um formulário do site envia o contato ao n8n, que grava na planilha, confirma por e-mail e avisa no WhatsApp.</desc>
+
+            <path id="p1" class="trilho" d="M190 78 H390"/>
+            <path id="p2" class="trilho" d="M465 106 V250"/>
+            <path id="p3" class="trilho" d="M465 106 V176 H285 V250"/>
+            <path id="p4" class="trilho" d="M465 106 V176 H100 V250"/>
+
+            <g class="no">
+              <rect x="20" y="50" width="170" height="56" rx="14"/>
+              <text x="105" y="83">Formulário do site</text>
+            </g>
+            <g class="no no--n8n">
+              <rect x="390" y="50" width="150" height="56" rx="14"/>
+              <text x="465" y="83">n8n</text>
+            </g>
+            <g class="no">
+              <rect x="20" y="250" width="160" height="56" rx="14"/>
+              <text x="100" y="283">Planilha de leads</text>
+            </g>
+            <g class="no">
+              <rect x="200" y="250" width="170" height="56" rx="14"/>
+              <text x="285" y="283">E-mail ao cliente</text>
+            </g>
+            <g class="no">
+              <rect x="390" y="250" width="150" height="56" rx="14"/>
+              <text x="465" y="283">WhatsApp</text>
+            </g>
+
+            <circle class="pulso" r="7" opacity="0">
+              <set attributeName="opacity" to="1" begin="0.6s"/>
+              <set attributeName="opacity" to="0" begin="1.6s"/>
+              <animateMotion dur="1s" begin="0.6s" fill="freeze"><mpath href="#p1"/></animateMotion>
+            </circle>
+            <circle class="pulso" r="7" opacity="0">
+              <set attributeName="opacity" to="1" begin="1.7s"/>
+              <set attributeName="opacity" to="0" begin="3s"/>
+              <animateMotion dur="1.2s" begin="1.7s" fill="freeze"><mpath href="#p2"/></animateMotion>
+            </circle>
+            <circle class="pulso" r="7" opacity="0">
+              <set attributeName="opacity" to="1" begin="1.7s"/>
+              <set attributeName="opacity" to="0" begin="3s"/>
+              <animateMotion dur="1.2s" begin="1.7s" fill="freeze"><mpath href="#p3"/></animateMotion>
+            </circle>
+            <circle class="pulso" r="7" opacity="0">
+              <set attributeName="opacity" to="1" begin="1.7s"/>
+              <set attributeName="opacity" to="0" begin="3s"/>
+              <animateMotion dur="1.2s" begin="1.7s" fill="freeze"><mpath href="#p4"/></animateMotion>
+            </circle>
+          </svg>
+          <figcaption>Exemplo de fluxo que monto no n8n: o contato do site cai na planilha, no e-mail e no WhatsApp ao mesmo tempo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="secao" id="servicos">
+      <div class="miolo secao__grade">
+        <div class="secao__rotulo">
+          <h2>O que eu faço</h2>
+          <p>Serviços para pequenos negócios e profissionais que querem aparecer e trabalhar com menos retrabalho.</p>
+        </div>
+        <dl class="linhas">
+          <div class="linha">
+            <dt>Web design</dt>
+            <dd>Sites e páginas em WordPress e Elementor, adaptados ao celular e fáceis de atualizar.</dd>
+          </div>
+          <div class="linha">
+            <dt>SEO</dt>
+            <dd>Estrutura, títulos, velocidade e conteúdo para o site ser encontrado no Google.</dd>
+          </div>
+          <div class="linha">
+            <dt>Tráfego pago</dt>
+            <dd>Anúncios que levam visitantes ao site, com acompanhamento do que gera contato.</dd>
+          </div>
+          <div class="linha">
+            <dt>Automação e IA</dt>
+            <dd>Fluxos no n8n e agentes de IA que ligam formulário, planilha, e-mail e WhatsApp.</dd>
+          </div>
+          <div class="linha">
+            <dt>Vídeo e design</dt>
+            <dd>Edição de vídeos e peças para redes sociais, com identidade visual consistente.</dd>
+          </div>
+          <div class="linha">
+            <dt>Copywriting e assistência virtual</dt>
+            <dd>Textos para site e anúncios, e apoio remoto na organização de tarefas e no atendimento.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="secao" id="projetos">
+      <div class="miolo secao__grade">
+        <div class="secao__rotulo">
+          <h2>Projetos de código</h2>
+          <p>Estudos e protótipos públicos no meu GitHub.</p>
+        </div>
+        <dl class="linhas">
+          <div class="linha">
+            <dt><a href="https://github.com/Daniel-NFernandes/projeto-streamlit" rel="noopener">projeto-streamlit</a></dt>
+            <dd>Aplicação web interativa para explorar a criação de interfaces e a prototipagem de aplicações. Feita com Python e Streamlit.</dd>
+          </div>
+          <div class="linha">
+            <dt><a href="https://github.com/Daniel-NFernandes/Hands-Detection" rel="noopener">Hands-Detection</a></dt>
+            <dd>Detecção e rastreamento de mãos em tempo real pela câmera. Feito com Python, Mediapipe e OpenCV.</dd>
+          </div>
+          <div class="linha">
+            <dt><a href="https://github.com/Daniel-NFernandes/waha" rel="noopener">WAHA (fork)</a></dt>
+            <dd>Fork do projeto open source WAHA, uma API HTTP do WhatsApp, escrita em TypeScript.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="secao" id="casos" hidden>
+      <div class="miolo secao__grade">
+        <div class="secao__rotulo">
+          <h2>Estudos de caso</h2>
+          <p>Trabalhos entregues, com o desafio, o que foi feito e o resultado.</p>
+        </div>
+        <div class="casos" id="lista-casos"></div>
+      </div>
+    </section>
+
+    <section class="secao" id="sobre">
+      <div class="miolo secao__grade">
+        <div class="secao__rotulo">
+          <h2>Sobre mim</h2>
+          <img class="retrato" src="assets/foto-perfil.jpg" width="800" height="800" loading="lazy" alt="Retrato de Daniel Fernandes">
+        </div>
+        <div class="texto">
+          <p>Trabalho há 25 anos na Polícia Militar do Ceará, onde aprendi a organizar processos, decidir sob pressão e cumprir prazos. Desde 2026 levo essa disciplina para projetos digitais como freelancer.</p>
+          <p>Curso Engenharia de Software na UNIGRANDE e estudo Python, APIs e automação com IA para que cada site e cada fluxo que eu entrego seja simples de usar e fácil de manter.</p>
+          <p>Estou aberto a projetos remotos, no Brasil e no exterior.</p>
+          <p class="texto__ferramentas"><strong>Ferramentas:</strong> WordPress, Elementor, HTML, CSS, Python, n8n, Git, GitHub e Docker.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="contato">
+      <div class="miolo secao__grade">
+        <div class="secao__rotulo">
+          <h2>Vamos conversar</h2>
+          <p>Conte o que você precisa. Respondo por WhatsApp ou e-mail.</p>
+        </div>
+        <ul class="contatos">
+          <li><a href="https://wa.me/5585998057097?text=Ol%C3%A1%2C%20Daniel!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." rel="noopener"><span class="contato__rotulo">WhatsApp</span><span class="contato__valor">+55 (85) 99805-7097</span></a></li>
+          <li><a href="mailto:danielnf8805@gmail.com"><span class="contato__rotulo">E-mail</span><span class="contato__valor">danielnf8805@gmail.com</span></a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-nfernandes" rel="noopener"><span class="contato__rotulo">LinkedIn</span><span class="contato__valor">linkedin.com/in/daniel-nfernandes</span></a></li>
+          <li><a href="https://github.com/Daniel-NFernandes" rel="noopener"><span class="contato__rotulo">GitHub</span><span class="contato__valor">github.com/Daniel-NFernandes</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo">
+      <p>© 2026 Daniel Fernandes. Fortaleza, Ceará, Brasil.</p>
+    </div>
+  </footer>
+
+  <script src="js/cases.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

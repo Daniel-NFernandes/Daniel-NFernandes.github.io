@@ -1,0 +1,366 @@
+/* ==========================================================
+   Portfólio Daniel Fernandes
+   Cores: água-clara, tinta, maré, turquesa e sol.
+   Tipografia: Bricolage Grotesque (títulos e interface)
+               Source Serif 4 (texto corrido)
+   ========================================================== */
+
+:root {
+  color-scheme: light dark;
+
+  --bg: #eef3f5;
+  --surface: #ffffff;
+  --ink: #0c2236;
+  --soft: #43586a;
+  --line: #cbd7dd;
+  --line-strong: #98aeba;
+  --primary: #0f5c73;
+  --on-primary: #ffffff;
+  --accent: #1fb5a8;
+  --sun: #f4b73f;
+
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-text: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+  --largura: 70rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a1822;
+    --surface: #102635;
+    --ink: #e7eff3;
+    --soft: #9db2c0;
+    --line: #1d394b;
+    --line-strong: #3b5c70;
+    --primary: #5ccfd8;
+    --on-primary: #062431;
+  }
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-text);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--primary); text-underline-offset: 0.2em; }
+
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.miolo {
+  width: min(100% - 2.5rem, var(--largura));
+  margin-inline: auto;
+}
+
+.pular {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  background: var(--primary);
+  color: var(--on-primary);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-family: var(--f-display);
+  font-weight: 600;
+  z-index: 10;
+}
+.pular:focus { top: 1rem; }
+
+/* ---------- Topo ---------- */
+
+.topo { border-bottom: 1px solid var(--line); }
+
+.topo__linha {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  padding-block: 1rem;
+}
+
+.marca {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.menu { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
+
+.menu a {
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-size: 0.98rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+/* ---------- Herói ---------- */
+
+.heroi { padding-block: clamp(2.5rem, 7vw, 5.5rem); }
+
+.heroi__grade {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-family: var(--f-display);
+  margin: 0;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: clamp(2.35rem, 5.6vw, 4rem);
+  line-height: 1.03;
+  letter-spacing: -0.025em;
+}
+
+.heroi__apoio {
+  max-width: 34rem;
+  margin: 1.5rem 0 0;
+  color: var(--soft);
+  font-size: 1.15rem;
+}
+
+.heroi__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0 0;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.8rem 1.35rem;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  font-family: var(--f-display);
+  font-weight: 600;
+  text-decoration: none;
+  transition: box-shadow 0.15s ease;
+}
+
+.botao--cheio { background: var(--primary); color: var(--on-primary); }
+.botao--vazado { color: var(--primary); }
+
+.botao:hover {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 22%, transparent);
+}
+
+/* Quadro com o fluxo de automação */
+
+.quadro {
+  margin: 0;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.quadro svg { width: 100%; height: auto; display: block; }
+
+.quadro figcaption {
+  margin-top: 0.75rem;
+  color: var(--soft);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.trilho {
+  fill: none;
+  stroke: var(--line-strong);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.no rect { fill: var(--bg); stroke: var(--line-strong); stroke-width: 1.5; }
+.no text {
+  fill: var(--ink);
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 15px;
+  text-anchor: middle;
+}
+.no--n8n rect { fill: var(--primary); stroke: var(--primary); }
+.no--n8n text { fill: var(--on-primary); font-weight: 700; }
+
+.pulso { fill: var(--sun); }
+
+/* ---------- Seções ---------- */
+
+.secao { padding-block: clamp(3rem, 7vw, 5.5rem); border-top: 1px solid var(--line); }
+
+.secao__grade {
+  display: grid;
+  grid-template-columns: minmax(0, 17rem) minmax(0, 1fr);
+  gap: 2rem 4rem;
+  align-items: start;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+
+.secao__rotulo p { margin: 0.9rem 0 0; color: var(--soft); font-size: 1rem; line-height: 1.6; }
+
+/* Linhas: nome à esquerda, descrição à direita */
+
+.linhas { margin: 0; }
+
+.linha {
+  display: grid;
+  grid-template-columns: minmax(0, 13rem) minmax(0, 1fr);
+  gap: 0.35rem 2rem;
+  padding-block: 1.3rem;
+  border-top: 1px solid var(--line);
+}
+.linha:last-child { border-bottom: 1px solid var(--line); }
+
+.linha dt {
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.linha dd { margin: 0; max-width: 38rem; }
+
+/* ---------- Estudos de caso ---------- */
+
+.casos { display: grid; gap: 0; }
+
+.caso { padding-block: 1.6rem; border-top: 1px solid var(--line); }
+.caso:last-child { border-bottom: 1px solid var(--line); }
+
+.caso h3 {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.caso__meta { margin: 0.25rem 0 1.1rem; color: var(--soft); font-size: 0.98rem; }
+
+.caso dl { margin: 0; display: grid; gap: 0.85rem; }
+
+.caso dt {
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.caso dd { margin: 0.1rem 0 0; max-width: 38rem; }
+
+.caso__link { display: inline-block; margin-top: 1rem; font-family: var(--f-display); font-weight: 600; }
+
+/* ---------- Sobre ---------- */
+
+.retrato {
+  width: 100%;
+  max-width: 15rem;
+  margin-top: 1.5rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+}
+
+.texto { max-width: 38rem; }
+.texto p { margin: 0 0 1.1rem; }
+.texto__ferramentas { color: var(--soft); }
+
+/* ---------- Contato ---------- */
+
+.contatos { list-style: none; margin: 0; padding: 0; }
+
+.contatos li { border-top: 1px solid var(--line); }
+.contatos li:last-child { border-bottom: 1px solid var(--line); }
+
+.contatos a {
+  display: grid;
+  grid-template-columns: minmax(0, 9rem) minmax(0, 1fr);
+  gap: 0.25rem 2rem;
+  padding-block: 1.15rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.contato__rotulo { font-family: var(--f-display); font-weight: 600; color: var(--soft); }
+
+.contato__valor {
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  overflow-wrap: anywhere;
+}
+
+.contatos a:hover .contato__valor {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape { border-top: 1px solid var(--line); padding-block: 2rem; color: var(--soft); font-size: 0.95rem; }
+.rodape p { margin: 0; }
+
+/* ---------- Telas pequenas ---------- */
+
+@media (max-width: 52rem) {
+  .heroi__grade,
+  .secao__grade { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+}
+
+@media (max-width: 36rem) {
+  .linha,
+  .contatos a { grid-template-columns: minmax(0, 1fr); }
+  .heroi__acoes .botao { flex: 1 1 100%; text-align: center; }
+  .no text { font-size: 17px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .botao { transition: none; }
+}
